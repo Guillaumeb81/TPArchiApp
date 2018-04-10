@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface StoryRepository {
 
-    public List<Story> getStories();
+    List<Story> getStories();
 
-    public void addStory(Story s);
+    void addStory(Story s);
 }
