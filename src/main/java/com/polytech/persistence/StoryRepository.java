@@ -1,8 +1,7 @@
-package persistence;
+package com.polytech.persistence;
 
-import service.Story;
+import com.polytech.service.Story;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

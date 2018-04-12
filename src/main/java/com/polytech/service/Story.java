@@ -1,19 +1,21 @@
-package service;
+package com.polytech.service;
 
 /**
  * Created by Guillaume Bardet on 10/04/2018.
  */
 public class Story {
 
-
-    private String message;
-
-    public Story(String s) {
-        message = s;
+    public Story() {
     }
 
-    public String getMessage() {
-        return message;
+    private String content;
+
+    public Story(String s) {
+        content = s;
+    }
+
+    public String getContent() {
+        return content;
     }
 
     @Override
@@ -23,12 +25,14 @@ public class Story {
 
         Story story = (Story) o;
 
-        return message != null ? message.equals(story.message) : story.message == null;
+        return content != null ? content.equals(story.content) : story.content == null;
 
     }
 
     @Override
     public int hashCode() {
-        return message != null ? message.hashCode() : 0;
+        return content != null ? content.hashCode() : 0;
     }
+
+
 }

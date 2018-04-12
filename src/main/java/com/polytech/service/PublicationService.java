@@ -1,14 +1,14 @@
-package service;
+package com.polytech.service;
 
-import persistence.StoryRepository;
+import com.polytech.persistence.StoryRepository;
 
 /**
  * Created by Guillaume Bardet on 10/04/2018.
  */
-public class FeedService {
+public class PublicationService {
     private StoryRepository repository;
 
-    public FeedService(StoryRepository repository) {
+    public PublicationService(StoryRepository repository) {
         this.repository = repository;
     }
 

@@ -1,17 +1,16 @@
-package service;
+package com.polytech.service;
 
-import com.sun.jmx.mbeanserver.Repository;
-import persistence.StoryRepository;
+import com.polytech.persistence.StoryRepository;
 
 import java.util.List;
 
 /**
  * Created by Guillaume Bardet on 10/04/2018.
  */
-public class FeedPublication {
+public class FeedService {
     private StoryRepository repository;
 
-    public FeedPublication(StoryRepository repository) {
+    public FeedService(StoryRepository repository) {
         this.repository = repository;
     }
 
